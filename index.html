@@ -1,0 +1,547 @@
+<!DOCTYPE HTML>
+<!-- This is an HTML comment -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>In Search of Treasure</title>
+
+	<!--turns off iOS reset of viewport-->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
+	margin: 0;	
+	padding: 0;	
+	border: 0;	
+	font-size: 100%;	
+	font: inherit;	
+	vertical-align: baseline;}
+	
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
+	display: block;}
+	
+	body {	
+	line-height: 1.5;
+	}
+	
+	ol, ul {	
+	list-style: none;
+	}
+	
+	blockquote, q {	
+	quotes: none;
+	}
+	
+	blockquote:before, blockquote:after,q:before, q:after {	
+	content: '';	
+	content: none;
+	}
+	
+	table {	
+	border-collapse: collapse;	border-spacing: 0;
+	}	 
+body, html {
+  height: 100%;
+  width: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  max-width: 100%;
+  background-color: black;
+}
+
+#ship1, #ship2, #ship3, #diverwater, #whaleshark1, #whaleshark2, #whaleshark3, #whale1, #whale2, #whale3, #deep2, #deep3, #dark1, #dark2, #dark3, #jelly1, #jelly2, #jelly3, #squid1, #squid2, #squid3, #swim1, #swim2, #swim3, #chest1, #chest2, div, h1, h2, h3, span {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#ship1 {
+  background-image: url("img/ship1.png");
+  min-height: 100%;
+}
+
+.caption span.ship1 {
+	color: black;
+
+}
+
+#ship2 {
+  background-image: url("img/ship2.png");
+  min-height: 100%;
+}
+
+#ship3 {
+  background-image: url("img/ship3.png");
+  min-height: 100%;
+}
+
+#diverwater {
+  background-image: url("img/diverwater.png");
+  min-height: 100%;
+}
+
+#whaleshark1 {
+  background-image: url("img/whaleshark1.png");
+  min-height: 100%;
+}
+
+#whaleshark2 {
+  background-image: url("img/whaleshark2.png");
+  min-height: 100%;
+}
+
+#whaleshark3 {
+  background-image: url("img/whaleshark3.png");
+  min-height: 100%;
+}
+
+#whale1 {
+  background-image: url("img/whale1.png");
+  min-height: 100%;
+}
+
+#whale2 {
+  background-image: url("img/whale2.png");
+  min-height: 100%;
+}
+
+#whale3 {
+  background-image: url("img/whale3.png");
+  min-height: 100%;
+}
+
+#deep2 {
+  background-image: url("img/deep2.png");
+  min-height: 100%;
+}
+
+#deep3 {
+  background-image: url("img/deep3.png");
+  min-height: 100%;
+}
+
+#dark1 {
+  background-image: url("img/dark1.png");
+  min-height: 100%;
+}
+
+#dark2 {
+  background-image: url("img/dark2.png");
+  min-height: 100%;
+}
+
+#dark3 {
+  background-image: url("img/dark3.png");
+  min-height: 100%;
+}
+
+#jelly1 {
+  background-image: url("img/jelly1.png");
+  min-height: 100%;
+}
+
+#jelly2 {
+  background-image: url("img/jelly2.png");
+  min-height: 100%;
+}
+
+#jelly3 {
+  background-image: url("img/jelly3.png");
+  min-height: 100%;
+}
+
+#squid1 {
+  background-image: url("img/squid1.png");
+  min-height: 100%;
+}
+
+#squid2 {
+  background-image: url("img/squid2.png");
+  min-height: 100%;
+}
+
+#squid3 {
+  background-image: url("img/squid3.png");
+  min-height: 100%;
+}
+
+#swim1 {
+  background-image: url("img/swim1.png");
+  min-height: 100%;
+}
+
+#swim2 {
+  background-image: url("img/swim2.png");
+  min-height: 100%;
+}
+
+#swim3 {
+  background-image: url("img/swim3.png");
+  min-height: 100%;
+}
+
+#chest1 {
+  background-image: url("img/chest1.png");
+  min-height: 100%;
+}
+
+#chest2 {
+  background-image: url("img/chest2.png");
+  min-height: 100%;
+}
+
+#black {
+  background-color: black;
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+h1 {
+	color: black;
+	font-size: 30px;
+}
+
+h2 {
+	color: white;
+	padding: 50% 20%;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  color: white;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  #ship1, #ship2, #ship3, #diverwater, #whaleshark1, #whaleshark2, #whaleshark3, #whale1, #whale2, #whale3, #deep2, #deep3, #dark1, #dark2, #dark3, #jelly1, #jelly2, #jelly3, #squid1, #squid2, #squid3, #swim1, #swim2, #swim3, #chest1, #chest2, div, h1, h2, h3, span {
+    background-attachment: scroll;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="ship1">
+	<div class="caption">
+		<h1 class="ship1" style="text-align:center;">In Search of Treasure</h1>
+  </div>
+</div>
+
+<div style="color: #777;background-color:black;text-align:center;padding:5% 10%;">
+  <h3 style="text-align:center;">1308</h3>
+</div>
+
+<div id="ship2">
+  <div class="caption">
+  <div class="border" style="background-color:transparent;color: #f7f7f7;"></div>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;;">On April 3rd, 1308, Captain John Flannigan's Treasure was lost at the bottom of the sea in a storm. For centuries, brave people have attempted to find it. None have.
+  </h3>
+</div>
+
+<div id="ship3">
+  <div class="caption">
+  <div class="border" style="background-color:transparent;font-size:2em;color: #f7f7f7;">Present Day</div>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Hey Christine, do we even know if this treasure exists? My dad told me this as a bedtime story when I was a kid."
+  </h3>
+</div>
+
+<div id="diverwater">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Don't you dare back out on me now Alex. You know how long and hard we've had to plan this trip."
+  </h3>
+</div>
+
+<div id="whaleshark1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Hey Alex, look behind you. Whaleshark coming in hot."
+  </h3>
+</div>
+
+<div id="whaleshark2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"That thing is huge! I've never seen one in person before."
+  </h3>
+</div>
+
+<div id="whaleshark3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"You don't dive much in the tropics do you?"
+  </h3>
+</div>
+
+<div id="whale1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Hey I've got a blue whale ahead of me a couple hundred feet away. It looks tiny from here."
+  </h3>
+</div>
+
+<div id="whale2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"It could be a calf. Do you see the mom anywhere?"
+  </h3>
+</div>
+
+<div id="whale3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"I found her!"
+  </h3>
+</div>
+
+
+<div id="deep2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Hey just so you know Alex, it's starting to get dark up here and you're going deeper so it's going to get really dark really fast."
+  </h3>
+</div>
+
+<div id="deep3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"I got this, it'll be fine."
+  </h3>
+</div>
+
+<div id="dark1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;text-align: justify;">
+  </div>
+</div>
+
+<div id="dark2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;text-align: justify;">
+  </div>
+</div>
+
+<div id="dark3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Hey look, a jellyfish!"
+  </h3>
+</div>
+
+<div id="jelly1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"More jellyfish!"
+  </h3>
+</div>
+
+<div id="jelly2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"A LOT more jellyfish!"
+  </h3>
+</div>
+
+<div id="jelly3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Is that what I think it is?"
+  </h3>
+</div>
+
+<div id="squid1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Christine, there's a squid fighting a sperm whale down here!" <br> "Alex you're way too far down, you need to come back up now!"
+  </h3>
+</div>
+
+<div id="squid2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"No, what I need to do is get out of the way and bring my camera next time!"
+  </h3>
+</div>
+
+<div id="squid3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Ok Christine, they're gone." <br> "Alex you need to get up here now, this isn't safe."
+  </h3>
+</div>
+
+<div id="swim1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"I'm almost there. I can feel it."
+  </h3>
+</div>
+
+
+<div id="swim2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;text-align: justify;">
+  </div>
+</div>
+
+
+<div id="swim3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"Christine, you're not going to believe this."
+  </h3>
+</div>
+
+
+<div id="chest1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <h3 style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;">"What?"
+  </h3>
+</div>
+
+
+<div id="chest2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:black;text-align:center;padding:5% 10%;text-align: justify;">
+  </div>
+</div>
+
+<div id="black">
+  <div id="real">
+  <h2 style="background-color:transparent;color: #f7f7f7;text-align:center;">It's real.</h2>
+  </div>
+</div>
+
+</body>
+</html>
